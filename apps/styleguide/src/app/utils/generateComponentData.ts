@@ -1,12 +1,7 @@
-import data from '../data/data';
+// import previewTemplates from '../PreviewTemplates'
 
-type UiComponentType = keyof typeof data;
+// type PreviewTemplate = keyof typeof previewTemplates;
 
-export const getPropsAndMethods = (componentType: UiComponentType) => {
-    const component = data[componentType];
-    return component ? component.propsAndMethods : ``;
-}
-
-export const getComponent = (componentType: UiComponentType) => {
-    return data[componentType] || {};
-}
+// export const getPreviewTemplate = (preview: PreviewTemplate) => {
+//     return previewTemplates[preview] || {};
+// }

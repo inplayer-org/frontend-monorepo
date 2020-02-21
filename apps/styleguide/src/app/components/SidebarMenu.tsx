@@ -9,10 +9,8 @@ import {
 
 import ComponentWrapper from './ComponentWrapper'
 // import * as InplayerUi from '@inplayer-org/inplayer-ui';
-import {
-  PaywallPreviews,
-  PreviewTemplatesWrapper
-} from '@inplayer-org/ui/paywall-previews';
+import { Preview1 } from '@inplayer-org/ui/paywall-previews';
+import PreviewTemplatesWrapper from './PreviewTemplatesWrapper';
 
 const WrapperNavigation = styled.div`
   width: 15rem;
@@ -72,38 +70,37 @@ const NavigationHeader = styled(StyledLink)`
 
 // const navigationElements = Object.keys(InplayerUi).filter(element => !itemsToIgnore.includes(element));
 
-const previewTemplates = Object.keys(PaywallPreviews);
-
-console.error(previewTemplates);
+// const previewTemplates = Object.keys(PaywallPreviews);
 
 const SidebarMenu: React.FC = () => (
-    <Router>
-      <WrapperNavigation>
-        <WrapperSection>
-          <NavigationHeader to='/'> InPlayer UI | 2.0.0 </NavigationHeader>
-        </WrapperSection>
-        <WrapperSection>
-          <NavigationHeader> Components</NavigationHeader>
-          {/* {
+  <Router>
+    <WrapperNavigation>
+      <WrapperSection>
+        <NavigationHeader to="/"> InPlayer UI | 2.0.0 </NavigationHeader>
+      </WrapperSection>
+      <WrapperSection>
+        <NavigationHeader> Components</NavigationHeader>
+        {/* {
             navigationElements.map(el => <StyledLink to={`/${el}`}>{el}</StyledLink>)
           } */}
-        </WrapperSection>
-        <WrapperSection>
-          <NavigationHeader>Previews</NavigationHeader>
-          {
+      </WrapperSection>
+      <WrapperSection>
+        <NavigationHeader>Previews</NavigationHeader>
+        {/* {
             previewTemplates.map(preview => <StyledLink to={`/${preview}`}>{preview}</StyledLink>)
-          }
-        </WrapperSection>
-      </WrapperNavigation>
-      <Switch>
-        <Route path="/:preview">
-          <PreviewTemplatesWrapper />
-        </Route>
-        <Route path="/:id">
-          <ComponentWrapper />
-        </Route>
-      </Switch>
-    </Router>
+          } */}
+        <Preview1></Preview1>
+      </WrapperSection>
+    </WrapperNavigation>
+    <Switch>
+      <Route path="/:preview">
+        <PreviewTemplatesWrapper />
+      </Route>
+      <Route path="/:id">
+        <ComponentWrapper />
+      </Route>
+    </Switch>
+  </Router>
 );
 
 export default SidebarMenu;
