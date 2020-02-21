@@ -1,0 +1,2 @@
+# frontend-monorepo
+Frontend Monorepo
