@@ -37,12 +37,12 @@ interface StyledInputProps {
   first?: boolean;
 }
 
-export const StyledInput: StyledComponent<'input', Theme, StyledInputProps> = styled.input`
+export const StyledInput = styled.input<StyledInputProps>`
   border-top: none;
   border-right: none;
   border-left: none;
   border-radius: 0;
-  border-bottom: 1px solid ${({ borderColor }: StyledInputProps) => ifProp('borderColor', borderColor, Colors.gray)};
+  border-bottom: 1px solid ${({ borderColor }) => ifProp('borderColor', borderColor, Colors.gray)};
   margin: 0 auto 10px;
   margin-right: ${ifProp('first', '1px', 'auto')};
   line-height: 20px;

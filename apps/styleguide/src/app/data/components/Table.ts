@@ -414,8 +414,8 @@ const Table: ComponentData = {
   description: `
   Table is a component for displaying information in order user to look for patterns and easy to scan details.
 
-  The columns contain title - which is presented at the top od the columns and key for each column. 
-  The data props contain object of each keys that are presented in the table cell according to the key. 
+  The columns contain title - which is presented at the top od the columns and key for each column.
+  The data props contain object of each keys that are presented in the table cell according to the key.
   The options object contains table options like row selection and row actions.
   `,
   path: 'src/components/Table/index.js',

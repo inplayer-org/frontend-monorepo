@@ -65,13 +65,13 @@ interface Props {
 }
 
 const PropsPreview: React.FC<Props> = ({ propsAndMethods }: Props) => {
-  let { id } = useParams();
+  const { id } = useParams();
   const [viewProps, toggleViewProps] = useState(false);
 
   useEffect(() => {
     toggleViewProps(false);
   }, [id]);
-  
+
   return (
     <ContentWrapper>
       <Title onClick={() => {toggleViewProps(!viewProps)}}>Props and methods</Title>
@@ -83,7 +83,7 @@ const PropsPreview: React.FC<Props> = ({ propsAndMethods }: Props) => {
             <Header>Default</Header>
             <Header>Description</Header>
           </HeaderRow>
-          {   
+          {
             propsAndMethods.map(prop => {
               return (
                 <Row>
@@ -91,7 +91,7 @@ const PropsPreview: React.FC<Props> = ({ propsAndMethods }: Props) => {
                   <Type>{prop.type}</Type>
                   <Default isDefault>{prop.default}</Default>
                   <Description> {prop.description} </Description>
-                </Row> 
+                </Row>
               )
             })
           }
