@@ -3,15 +3,15 @@ import { Colors, InPlayerIcon } from '@inplayer-org/inplayer-ui';
 import { transparentize } from 'polished';
 
 // Images
-import previewImg from './images/ip-preview-premium.jpg';
-import restrictedAssetImg from './images/restricted-asset.png';
+import previewImg from '../images/ip-preview-premium.jpg';
+import restrictedAssetImg from '../images/restricted-asset.png';
 
 // Types
 import { Branding } from './types';
 
 // Components
-import StyledContainer from './components/StyledContainer';
-import TextEditor from './components/TextEditor';
+import StyledContainer from '../components/StyledContainer';
+import TextEditor from '../components/TextEditor';
 import { OverlayLabel, PreviewImage } from './styledComponents/SharedComponents';
 import {
   StyledPreviewBox,

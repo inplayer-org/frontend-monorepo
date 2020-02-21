@@ -2,16 +2,16 @@ import React, { FunctionComponent } from 'react';
 import { Colors, Grid } from '@inplayer-org/inplayer-ui';
 
 // Images
-import previewImg from './images/ip-preview-premium.jpg';
-import restrictedAssetImg from './images/restricted-asset.png';
-import logo from './images/icons/ip-icon-blue.svg';
+import previewImg from '../images/ip-preview-premium.jpg';
+import restrictedAssetImg from '../images/restricted-asset.png';
+import logo from '../images/icons/ip-icon-blue.svg';
 
 // Types
 import { Branding } from './types';
 
 // Components
-import StyledContainer from './components/StyledContainer';
-import TextEditor from './components/TextEditor';
+import StyledContainer from '../components/StyledContainer';
+import TextEditor from '../components/TextEditor';
 import {
   OverlayLabel,
   PreviewImage,

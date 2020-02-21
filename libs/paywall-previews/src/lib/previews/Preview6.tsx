@@ -2,13 +2,13 @@ import React from 'react';
 import { Colors } from '@inplayer-org/inplayer-ui';
 
 // Images
-import previewImg from './images/ip-preview-premium.jpg';
+import previewImg from '../images/ip-preview-premium.jpg';
 
 // Types
 import { Branding } from './types';
 
 // Components
-import TextEditor from './components/TextEditor';
+import TextEditor from '../components/TextEditor';
 import {
   StyledPreviewBox,
   ImageWrapper,

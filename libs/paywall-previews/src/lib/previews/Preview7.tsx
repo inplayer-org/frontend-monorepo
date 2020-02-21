@@ -2,15 +2,15 @@ import React, { FunctionComponent } from 'react';
 import { Colors, InPlayerIcon } from '@inplayer-org/inplayer-ui';
 
 // Images
-import previewImg from './images/ip-preview-premium.jpg';
-import restrictedAssetImg from './images/restricted-asset.png';
+import previewImg from '../images/ip-preview-premium.jpg';
+import restrictedAssetImg from '../images/restricted-asset.png';
 
 // Types
 import { Branding } from './types';
 
 // Components
 import { PreviewImage, OverlayLabel } from './styledComponents/SharedComponents';
-import TextEditor from './components/TextEditor';
+import TextEditor from '../components/TextEditor';
 import {
   StyledPreviewBox,
   StyledImageWrapper,

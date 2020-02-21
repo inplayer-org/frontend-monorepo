@@ -3,13 +3,13 @@ import { Colors } from '@inplayer-org/inplayer-ui';
 import { lighten } from 'polished';
 
 // Images
-import previewImg from './images/ip-preview-premium.jpg';
+import previewImg from '../images/ip-preview-premium.jpg';
 
 // Types
 import { Branding } from './types';
 
 // Components
-import TextEditor from './components/TextEditor';
+import TextEditor from '../components/TextEditor';
 import { PaywallExplain } from './styledComponents/SharedComponents';
 import {
   StyledPreviewBox,
